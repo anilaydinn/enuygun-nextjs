@@ -13,6 +13,7 @@ function EmployeListItem(props) {
         className={styles.link}
         href="/employees/[id]"
         as={`employees/${employe.id}`}
+        shallow={true}
       >
         <img className={styles.empImage} src={employe.image} />
       </Link>
@@ -20,6 +21,7 @@ function EmployeListItem(props) {
         className={styles.link}
         href="/employees/[id]"
         as={`employees/${employe.id}`}
+        shallow={true}
       >
         <div>{`${employe.firstName} ${employe.lastName}`}</div>
       </Link>
@@ -27,6 +29,7 @@ function EmployeListItem(props) {
         className={styles.link}
         href="/employees/[id]"
         as={`employees/${employe.id}`}
+        shallow={true}
       >
         <div>{employe.phone}</div>
       </Link>
@@ -34,6 +37,7 @@ function EmployeListItem(props) {
         className={styles.link}
         href="/employees/[id]"
         as={`employees/${employe.id}`}
+        shallow={true}
       >
         <div>{employe.address}</div>
       </Link>

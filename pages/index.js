@@ -12,7 +12,9 @@ function App({ employees, setEmployees }) {
   return <EmployeList employees={employees} />;
 }
 
-const mapStateToProps = (state) => ({});
+const mapStateToProps = (state) => ({
+  employeesRedux: state.employees,
+});
 
 const mapDispatchToProps = (dispatch) => ({
   setEmployees: (employees) => {
